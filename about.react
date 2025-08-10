@@ -1,0 +1,53 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const AboutPage = () => {
+  return (
+    <div className="bg-black pt-[80px]">
+      <div className="w-full h-full flex px-30 p-10 gap-25">
+        {/* ———————————— Right Image —————————————— */}
+        <div className="shadow-custom">
+          <img
+            className="h-150 w-300 object-cover"
+            src="/assets/images/cybersecurity-team.jpg"
+            alt="Cybersecurity Team at Work"
+          />
+        </div>
+
+        {/* ———————————— Left Content —————————————— */}
+        <div>
+          <h1 className="text-blue-400 text-xl font-bold">About Us ——</h1>
+          <h2 className="text-7xl text-white font-bold">
+            Protecting What Matters Most in the Digital Age
+          </h2>
+          <img
+            className="h-15 w-16 mt-4 mb-4"
+            src="/assets/images/quote-icon.png"
+            alt="Quote Icon"
+          />
+          <p className="font-semibold text-white text-3xl mt-4">
+            At ShieldX, we deliver advanced cybersecurity solutions to keep your
+            data safe, your business secure, and your future protected.
+          </p>
+          <p className="text-blue-400 mt-5 font-semibold">
+            — Hamza Khan (CEO & Founder)
+          </p>
+          <p className="text-gray-100">
+            From threat detection to incident response, our team of experts works
+            around the clock to safeguard your digital infrastructure. We combine
+            innovative technology with years of experience to deliver security you
+            can trust.
+          </p>
+
+          <Link to="/about">
+            <button className="px-6 py-3 text-xl md:text-2xl lg:text-3xl text-white z-50 bg-blue-500 hover:bg-blue-600 mt-15">
+              Read More →
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;
